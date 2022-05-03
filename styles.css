@@ -17,6 +17,8 @@
   display: flex;
   justify-content: center;
   color: white;
+  min-height: 100vh;
+  align-items: center;
 }
 
 .selection {
@@ -88,12 +90,13 @@
 }
 
 .btn:hover {
-  background-color: var(--orange);
+  background-color: var(--lightGrey);
   color: white;
+  transition: 0.5s;
 }
 
 .btn:focus {
-  background-color: var(--lightGrey);
+  background-color: var(--orange);
   color: white;
 }
 
@@ -114,6 +117,7 @@
 .submit:hover {
   color: var(--orange);
   background-color: white;
+  transition: 0.5s;
 }
 
 .img-thanks {
@@ -130,4 +134,24 @@
   text-align: center;
   border-radius: 2rem;
   padding: 4px 20px;
+}
+
+@media (max-width: 500px) {
+  #card, #card2 {
+    width: 18rem;
+    margin: 9% auto 9% auto;
+    padding: 1rem;
+  }
+  .text1, .text2 {
+    font-size: 0.9rem;
+  }
+  .text2 {
+    padding-bottom: 2rem;
+  }
+  .header1, .header2 {
+    font-size: 1.5rem;
+  }
+  .selection {
+    width: 75%;
+  }
 }
